@@ -6,6 +6,8 @@ font-family: 'EB Garamond', serif;
  /* Defaults */
 body {
     font-size: 16px;
+    background-image: url(images/woodenplanks.jpg);
+    background-size: cover;
 }
  /* End Defaults */ 
 
@@ -14,6 +16,7 @@ header {
     height: 200px;
     background-image: url(images/burgers-header.jpg);
     padding-top: 10px;
+    border-bottom: 7px black solid;
 }
 header p {
     font-family: 'EB Garamond', serif;
@@ -23,3 +26,36 @@ header p {
     font-weight: bold;
 }
  /* End Header */
+
+ /* Main */
+ main {
+     min-height: 600px;
+     width: 600px;
+     background-image: url(images/burgers-header.jpg);
+     background-size: cover;
+     border: 2px white solid;
+     margin: 0 auto;
+ }
+ main h1 {
+     text-align: center;
+     color: red;
+     font-family: 'Oswald', sans-serif;
+     font-size: 5em;
+ }
+main button {
+    margin: 0 auto;
+}
+ /* End Main */
+
+ /* Footer */
+ footer {
+     height: 50px;
+     background-color: #324459;
+     padding-top: 20px;
+     border-top: 7px black solid;
+ }
+ footer p {
+     margin: 0;
+     text-align: center;
+ }
+ /* End Footer */
