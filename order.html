@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order | Bubba's Burgers</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Bubba's Burgers</p>
+    </header>
+    <main>
+        <h1>Online Order</h1>
+        <form id="order"action="checkout.html" method="post">
+            <fieldset>
+                <legend>Burger</legend>
+                <input type="radio" name="burger" id="burger1" value="single" checked required>
+                <label for="burger1">Cheeseburger</label><br>
+                <input type="radio" name="burger" id="burger2" value="double">
+                <label for="burger2">Double Cheeseburger</label><br>
+                <input type="radio" name="burger" id="burger3" value="veggie">
+                <label for="burger3">Veggie Burger</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                    <legend>Toppings</legend>
+                    <input type="checkbox" name="topping" id="topping1" value="pickles">
+                    <label for="topping1">Pickles</label><br>
+                    <input type="checkbox" name="topping" id="topping2" value="onions">
+                    <label for="topping2">Onions</label><br>
+                    <input type="checkbox" name="topping" id="topping3" value="lettuce">
+                    <label for="topping3">Lettuce</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                    <legend>Sides</legend>
+                    <input type="radio" name="side" id="side1" value="fries" checked required>
+                    <label for="side1">Fries</label><br>
+                    <input type="radio" name="side" id="side2" value="onionrings">
+                    <label for="side2">Onion Rings</label><br>
+                    <input type="radio" name="side" id="side3" value="tatortots">
+                    <label for="side3">Tator Tots</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Drinks</legend>
+                <select name="drinks" id="drinks">
+                    <optgroup label="Sodas">
+                        <option value="drpepper">Dr. Pepper</option>
+                        <option value="pepsi">Pepsi</option>
+                        <option value="mtdew">Mountain Dew</option>
+                        <option value="sprite">Sprite</option>
+                        <option value="rootbeer">A&W Root Beer</option>
+                    </optgroup>
+                    <optgroup label="Low Calorie">
+                        <option value="vitaminwater">Vitamin Water</option>
+                        <option value="tea">Unsweetened Tea</option>
+                        <option value="sweettea">Sweet Tea</option>
+                        <option value="lightlemonade">Light Lemonade</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                    <legend>Dine-In or Pick-Up</legend>
+                    <input type="radio" name="eat" id="dinein" value="dinein" checked required>
+                    <label for="side1">Dine-In</label><br>
+                    <input type="radio" name="eat" id="pickup" value="pickup">
+                    <label for="side2">Pick-Up</label><br>
+                    
+            </fieldset>
+            <input type="submit" id="checkout">
+            <input type="reset" id="reset">
+        </form>
+    </main>
+    <footer>
+        <p>Bubba's Burgers Copyright &copy; 2019</p>
+    </footer>
+</body>
+</html>
